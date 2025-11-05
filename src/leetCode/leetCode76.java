@@ -11,6 +11,9 @@ import java.util.HashMap;
 
 //历时35分钟总算解决了
 public class leetCode76 {
+    public static void main(String[] args) {
+
+    }
     static String minWindow(String s, String t) {
         if(s.length()<t.length()){
             return "";
@@ -64,8 +67,7 @@ public class leetCode76 {
         if(minlength ==s.length()+1){
             return "";
         }else {
-            char[] slice = Arrays.copyOfRange(charArray, mini, minj + 1);
-            return new String(slice);
+            return s.substring(mini, minj + 1);
         }
     }
 }
